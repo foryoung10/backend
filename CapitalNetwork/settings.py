@@ -9,11 +9,23 @@ https://docs.djangoproject.com/en/1.9/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/1.9/ref/settings/
 """
-
 import os
+
+
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+#print "base dir path", BASE_DIR
+
+#TEMPLATE_PATH = os.path.join(BASE_DIR, 'templates')
+#print "base dir path", TEMPLATE_PATH
+
+#TEMPLATE_DIRS = (
+    # Put strings here, like "/home/html/django_templates" or "C:/www/django/templates".
+    # Always use forward slashes, even on Windows.
+    # Don't forget to use absolute paths, not relative paths.
+ #   TEMPLATE_PATH,
+#)
 
 
 # Quick-start development settings - unsuitable for production
@@ -119,4 +131,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 
-STATIC_URL = '/static/'
+#STATIC_PATH = os.path.join(PROJECT_PATH,'static')
+
+STATIC_URL = '/static/' 
+
+##   STATIC_PATH,
+# )
